@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Darker color for the heading */
+}
+
+canvas {
+    background: #eee;
+    display: block;
+    margin: 20px auto; /* Center the canvas */
+    border: 3px solid #000; /* Increased border thickness */
+    border-radius: 5px; /* Rounded corners for the canvas */
+}
+
+#difficultySelection, #themeSelection {
+    margin: 20px 0; /* Improved spacing */
+}
+
+label {
+    font-size: 18px; /* Increased label font size */
+}
+
+select {
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 10px; /* Space between label and select */
+}
+
+#startButton, #restartButton {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px; /* Increased padding for buttons */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+#startButton:hover, #restartButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Background theme styles */
+.night {
+    background-image: url('image/渲染2.jpg'); /* Night sky background */
+    background-size: cover;
+}
+
+.forest {
+    background-image: url('image/渲染.jpg'); /* Forest background */
+    background-size: cover;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #startButton, #restartButton {
+        width: 90%; /* Full width on smaller screens */
+        font-size: 16px; /* Slightly smaller font */
+    }
+}
